@@ -16,4 +16,4 @@ spec:
         - name: nikitkubtcldemo 
           image: myacrrepo12345.azurecr.io/nikitkubtcldemo
           ports:
-          - containerPort: 90
+          - containerPort: 2020
