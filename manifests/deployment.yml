@@ -1,7 +1,7 @@
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nikitkubtcldemo 
+  name: nikitkubtcldemo
 spec:
   replicas: 1
   selector:
@@ -10,10 +10,10 @@ spec:
   template:
     metadata:
       labels:
-        app: nikitkubtcldemo 
+        app: nikitkubtcldemo
     spec:
       containers:
-        - name: nikitkubtcldemo 
+        - name: nikitkubtcldemo
           image: myacrrepo12345.azurecr.io/nikitkubtcldemo
           ports:
-          - containerPort: 2020
+            - containerPort: 2020
