@@ -7,5 +7,5 @@ spec:
   selector:
     app: nikitkubtcldemo
   ports:
-    - port: 90            # Exposed port on the LoadBalancer
-      targetPort: 2020    # Container port inside the pod
+    - port: 2020
+      targetPort: 2020
