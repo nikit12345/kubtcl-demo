@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: kubctl123 
-          image: myacrrepo12345.azurecr.io/kubctl123
+          image: myacrrepo12345.azurecr.io/kubtcldemo
           ports:
           - containerPort: 80
