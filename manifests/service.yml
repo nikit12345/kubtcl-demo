@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: nikitkubtcldemo
+  name: nikitkubtcldemo
 spec:
-    type: LoadBalancer
-    ports:
-    - port: 90
-    selector:
-        app: nikitkubtcldemo
+  type: LoadBalancer
+  selector:
+    app: nikitkubtcldemo
+  ports:
+    - port: 90            # Exposed port on the LoadBalancer
+      targetPort: 2020    # Container port inside the pod
