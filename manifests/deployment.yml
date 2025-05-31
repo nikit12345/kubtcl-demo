@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: kubctl123 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubctl123
+  template:
+    metadata:
+      labels:
+        app: kubctl123 
+    spec:
+      containers:
+        - name: kubctl123 
+          image: myacrrepo12345.azurecr.io/kubctl123
+          ports:
+          - containerPort: 80
