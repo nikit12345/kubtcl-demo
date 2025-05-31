@@ -80,6 +80,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>testKubernet</finalName>
 	</build>
 
 </project>
